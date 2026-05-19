@@ -1,273 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-  <title>ali Portfolio</title>
-
-  <link rel="stylesheet"
-    href="style.css">
-
-  
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="bg-animation"></div>
+<div class="calculator">
 
-  <!-- Header -->
+  <input type="text" id="display" disabled>
 
-  <header>
+  <div class="buttons">
 
-    <div class="logo">
-      Hi✌️
-    </div>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="appendValue('/')">÷</button>
+    <button onclick="appendValue('*')">×</button>
+    <button onclick="deleteLast()">⌫</button>
 
-    <nav>
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('-')">-</button>
 
-      <a href="#home">Home</a>
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('+')">+</button>
 
-      <a href="#about">About</a>
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="calculate()" class="equal">=</button>
 
-      <a href="#skills">Skills</a>
+    <button onclick="appendValue('0')" class="zero">0</button>
+    <button onclick="appendValue('.')">.</button>
 
-      <a href="#contact">Contact</a>
+  </div>
 
-    </nav>
+</div>
 
-  </header>
-
-  <!-- Hero Section -->
-
-  <section class="hero"
-    id="home">
-
-    <!-- Text -->
-
-    <div class="hero-text">
-
-      <span class="hello">
-        👋 Hello, I'm
-      </span>
-
-      <h1>
-        Abdallah Ramadan Younes
-      </h1>
-
-      <h3>
-        Frontend Developer & AI Student
-      </h3>
-
-      <p>
-        I build modern responsive websites.
-      </p>
-
-
-      <div class="buttons">
-
-        <a href="https://wa.me/201090470809"
-          target="_blank"
-          class="btn primary">
-
-          Contact Me
-
-        </a>
-
-        <a href="#skills"
-          class="btn secondary">
-
-          My Skills
-
-        </a>
-
-      </div>
-
-      <!-- Social -->
-
-      <div class="socials">
-
-        <a href="https://www.facebook.com/"
-          target="_blank">
-
-          <i class="fab fa-facebook-f"></i>
-
-        </a>
-
-        <a href="https://www.instagram.com/"
-          target="_blank">
-
-          <i class="fab fa-instagram"></i>
-
-        </a>
-
-        <a href="mailto:grandsabour@gmail.com">
-
-          <i class="fas fa-envelope"></i>
-
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- Image -->
-
-    <div class="hero-image">
-
-      <div class="circle"></div>
-
-      <img
-        src="WhatsApp Image 2026-05-17 at 12.04.31 AM.jpeg"
-        alt="Abdallah's profile picture"
-        class="profile-img">
-
-    </div>
-
-  </section>
-
-  <!-- About -->
-
-  <section class="about"
-    id="about">
-
-    <div class="about-card">
-
-      <h2>
-        About Me
-      </h2>
-
-      <p>
-        I am an ambitious AI student passionate about web development and cybersecurity.
-      </p>
-
-      <div class="info-boxes">
-
-        <!-- Phone -->
-
-        <div class="info-box">
-
-          <i class="fas fa-phone"></i>
-
-          <div>
-
-            <h4>
-              Phone
-            </h4>
-
-            <a href="https://wa.me/201090470809"
-              target="_blank">
-
-              01090470809
-
-            </a>
-
-          </div>
-
-        </div>
-
-        <!-- Email -->
-
-        <div class="info-box">
-
-          <i class="fas fa-envelope"></i>
-
-          <div>
-
-            <h4>
-              Email
-            </h4>
-
-            <p>
-              grandsabour@gmail.com
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Skills -->
-
-  <section class="skills"
-    id="skills">
-
-    <h2>
-      My Skills
-    </h2>
-
-    <div class="skills-container">
-
-      <div class="skill-card">
-
-        <i class="fab fa-html5"></i>
-
-        <h3>
-          HTML
-        </h3>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="fab fa-css3-alt"></i>
-
-        <h3>
-          CSS
-        </h3>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="fab fa-js"></i>
-
-        <h3>
-          JavaScript
-        </h3>
-
-      </div
-
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-
-  <footer id="contact">
-
-    <h2>
-      Let's Work Together 🚀
-    </h2>
-
-    <a href="https://wa.me/201090470809`"
-      target="_blank"
-      class="footer-btn">
-
-      Chat on WhatsApp
-
-    </a>
-
-  </footer>
-
-  <script src="script (1).js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
